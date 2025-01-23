@@ -34,7 +34,12 @@ You want to make sure that fields appear similar to this:
 + **real_time_protection_enabled**: This should say true if real-time protection is active.
 + **cloud_enabled**: This should say true
 
-- Ensure that the device appears in the Microsoft 365 Defender portal under **Devices**.
+## Ensure that the device appears in the Microsoft 365 Defender portal under **Devices**.
+- Note that it can take a few hours before a risk and exposure level appear in the dashboard. 
+
+  ![image](https://github.com/user-attachments/assets/31f9ef50-eb63-4cf1-a771-cc6015d33f25)
+(click to expand)
+
 
 ## Post-Onboarding
 - Configure any additional settings or policies as required.

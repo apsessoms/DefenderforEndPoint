@@ -13,22 +13,27 @@
 3. Select **Linux** as the operating system.
 4. Download the onboarding package and save it to your Linux device.
 
-### 2. Extract the Onboarding Package
-```bash
-tar -xzvf <onboarding_package>.tar.gz
-cd <onboarding_package>
-```
+![image](https://github.com/user-attachments/assets/0a0c98e5-4eb4-4a2a-86c9-c9f2fb166317)
 
-### 3. Run the Onboarding Script
-```bash
-sudo bash ./onboard_linux.sh
-```
 
+### 2. Run the Onboarding script
+```bash
+sudo python3 MicrosoftDefenderATPOnboardingLinuxServer.py
+```
 ### 4. Verify the Onboarding
 - Check the status of the MDE service:
     ```bash
     sudo mdatp health
     ```
+![image](https://github.com/user-attachments/assets/d04bead2-1fa1-4841-b188-fe1944645a38)
+
+You want to make sure that fields appear similar to this:
++ **healthy**: This should say true.
++ **licensed**: This should say true.
++ **org_id**: This should display your organization's ID.
++ **real_time_protection_enabled**: This should say true if real-time protection is active.
++ **cloud_enabled**: This should say true
+
 - Ensure that the device appears in the Microsoft 365 Defender portal under **Devices**.
 
 ## Post-Onboarding
